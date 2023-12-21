@@ -14,9 +14,9 @@ const Navbar = () => {
         <input
           type="text"
           placeholder="Search"
-          className="input input-bordered input-[#EFEFEF] w-[220px] lg:w-[300px] h-[50px] rounded-full"
+          className="input input-bordered input-[#EFEFEF] w-[220px] md:w-[270px] lg:w-[300px] h-[50px] rounded-full"
         />
-        <FaSearch className="text-[#c5c5c5] text-xl absolute right-4 top-3.5" />
+        <FaSearch className="text-[#c5c5c5] text-xl absolute right-[-95px] md:right-6 lg:right-4 top-3.5" />
       </div>
       <p className="tracking-[0.1] h-[50px] font-bold text-[14px] text-white bg-themeColor border-themeColor border-[2px] rounded-[60px] flex justify-center items-center px-[110px] lg:px-[40px] lg:py-[18px]">
         Upload

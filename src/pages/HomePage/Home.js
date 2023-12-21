@@ -1,16 +1,16 @@
 import React from "react";
 import HeroPart from "./HeroPart/HeroPart";
-import SecondPart from "./SecondPart/SecondPart";
 import ThirdPart from "./ThirdPart/ThirdPart";
 import FeaturedCollectionPart from "./FeaturedCollectionPart/FeaturedCollectionPart";
 import CreateSellPart from "./CreateSellPart/CreateSellPart";
 import DiscoverMorePart from "./DiscoverMorePart/DiscoverMorePart";
+import SecondPartofHome from "./SecondPart/SecondPartofHome";
 
 const Home = () => {
   return (
     <div>
       <HeroPart />
-      {/* <SecondPart /> */}
+      <SecondPartofHome />
       {/* <ThirdPart /> */}
       {/* <FeaturedCollectionPart /> */}
       {/* <CreateSellPart /> */}
