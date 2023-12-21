@@ -4,6 +4,7 @@ import SecondPart from "./SecondPart/SecondPart";
 import ThirdPart from "./ThirdPart/ThirdPart";
 import FeaturedCollectionPart from "./FeaturedCollectionPart/FeaturedCollectionPart";
 import CreateSellPart from "./CreateSellPart/CreateSellPart";
+import DiscoverMorePart from "./DiscoverMorePart/DiscoverMorePart";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <ThirdPart />
       <FeaturedCollectionPart />
       <CreateSellPart />
+      <DiscoverMorePart />
     </div>
   );
 };

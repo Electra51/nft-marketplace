@@ -11,7 +11,7 @@ import featureImage8 from "../../../assets/featureImage/8.png"
 import manPic from "../../../assets/manPic.png"
 const FeaturedCollectionPart = () => {
   return (
-    <div className='mt-[151px]  bg-[#D9E0EC]'>
+    <div className='mt-[151px] bg-[#D9E0EC] bg-opacity-20'>
       <div className='max-w-[1200px] mx-auto h-[619px]'>
         <h1 className='text-[28px] text-black font-bold pt-[64px] pb-[55px]'>Collection Featured NFTs</h1>
 

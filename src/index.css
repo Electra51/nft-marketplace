@@ -49,11 +49,14 @@ h3 {
 }
 
 p,
-a {
+a,
+option,
+select {
   font-family: "DM Sans", sans-serif;
 }
 
-input:focus {
+input:focus,
+select:focus {
   outline: none !important;
 }
 .active {
