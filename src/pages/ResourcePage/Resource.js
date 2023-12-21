@@ -33,7 +33,7 @@ const Resource = () => {
                         <input type='text' placeholder='Subject'
                             class="w-full rounded-[100px] py-3 px-4 bg-gray-100 text-sm outline-[#494CB7]" />
                         <textarea placeholder='Message' rows="6"
-                            class="textarea w-full rounded-[25px] px-4 bg-gray-100 text-sm pt-3 outline-[#494CB7]"></textarea>
+                            class="w-full rounded-[25px] px-4 bg-gray-100 text-sm pt-3 outline-[#494CB7]"></textarea>
                         <button type='button'
                             class="text-white bg-[#494CB7] hover:bg-[#383956] font-semibold rounded-[100px] text-sm px-4 py-3 w-full">Send</button>
                     </form>

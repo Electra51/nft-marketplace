@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         themeColor: "#3D00B7",
+        paragraphColor: "#565656",
       },
       screens: {
         xs: "320px",

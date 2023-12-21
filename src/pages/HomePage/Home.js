@@ -10,11 +10,11 @@ const Home = () => {
   return (
     <div>
       <HeroPart />
-      <SecondPart />
-      <ThirdPart />
-      <FeaturedCollectionPart />
-      <CreateSellPart />
-      <DiscoverMorePart />
+      {/* <SecondPart /> */}
+      {/* <ThirdPart /> */}
+      {/* <FeaturedCollectionPart /> */}
+      {/* <CreateSellPart /> */}
+      {/* <DiscoverMorePart /> */}
     </div>
   );
 };

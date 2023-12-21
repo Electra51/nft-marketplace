@@ -1,19 +1,66 @@
-import img1 from "../../../assets/discoverMoreImage/1.png"
-import img2 from "../../../assets/discoverMoreImage/2.png"
-import img3 from "../../../assets/discoverMoreImage/3.png"
-import img4 from "../../../assets/discoverMoreImage/1.jpeg"
-import img5 from "../../../assets/discoverMoreImage/10.jpeg"
-import img6 from "../../../assets/discoverMoreImage/11.jpeg"
-import img7 from "../../../assets/discoverMoreImage/12.jpeg"
-import img8 from "../../../assets/discoverMoreImage/13.jpeg"
-import img9 from "../../../assets/discoverMoreImage/14.jpeg"
-import img10 from "../../../assets/discoverMoreImage/15.jpeg"
-import img11 from "../../../assets/discoverMoreImage/2.jpeg"
-import img12 from "../../../assets/discoverMoreImage/3.jpeg"
-import man1 from "../../../assets/discoverMoreImage/man1.png"
-import man2 from "../../../assets/discoverMoreImage/man2.png"
-import man3 from "../../../assets/discoverMoreImage/man3.png"
-import man4 from "../../../assets/discoverMoreImage/man4.png"
+import img1 from "../../assets/discoverMoreImage/1.png"
+import img2 from "../../assets/discoverMoreImage/2.png"
+import img3 from "../../assets/discoverMoreImage/3.png"
+import img4 from "../../assets/discoverMoreImage/1.jpeg"
+import img5 from "../../assets/discoverMoreImage/10.jpeg"
+import img6 from "../../assets/discoverMoreImage/11.jpeg"
+import img7 from "../../assets/discoverMoreImage/12.jpeg"
+import img8 from "../../assets/discoverMoreImage/13.jpeg"
+import img9 from "../../assets/discoverMoreImage/14.jpeg"
+import img10 from "../../assets/discoverMoreImage/15.jpeg"
+import img11 from "../../assets/discoverMoreImage/2.jpeg"
+import img12 from "../../assets/discoverMoreImage/3.jpeg"
+import man1 from "../../assets/discoverMoreImage/man1.png"
+import man2 from "../../assets/discoverMoreImage/man2.png"
+import man3 from "../../assets/discoverMoreImage/man3.png"
+import man4 from "../../assets/discoverMoreImage/man4.png"
+
+import heroImage3 from "../../assets/3.png";
+import heroImage2 from "../../assets/2.png"
+import heroImage1 from "../../assets/1.png";
+import manPic from "../../assets/manPic.png"
+
+
+export const menus = [
+  { to: "/market_place", label: "Marketplace" },
+  { to: "/resource", label: "Resource" },
+  { to: "/about", label: "About" },
+];
+
+
+export const heroData = [
+  {
+    id: "1",
+    title: "Abstr Gradient NFT",
+    userName: "Arkhan17",
+    img: heroImage1,
+    manImg: manPic,
+    eth: "0.25 ETH",
+    time: "12h  43m  42s"
+
+  },
+  {
+    id: "2",
+    title: "General ArtPlace NFT",
+    userName: "Ripani57",
+    img: heroImage2,
+    manImg: man2,
+    eth: "1.20 ETH",
+    time: "15h  30m  20s"
+
+  },
+  {
+    id: "3",
+    title: "Digital Art NFT",
+    userName: "Sghajik17",
+    img: heroImage3,
+    manImg: man3,
+    eth: "1.75 ETH",
+    time: "17h  43m  32s"
+
+  }
+]
+
 export const data = [
   {
     id: "1",

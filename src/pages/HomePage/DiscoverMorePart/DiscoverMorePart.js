@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { MdFilterList } from "react-icons/md";
 import Card from './Card';
-import { data } from "./data";
+import { data } from "../../../components/common/data";
 
 const DiscoverMorePart = () => {
     const [toggleState, setToggleState] = useState(1);

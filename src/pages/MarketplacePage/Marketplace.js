@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import marketPlace from "../../assets/marketplace.jpg";
-import { data } from "../HomePage/DiscoverMorePart/data"
+import { data } from "../../components/common/data"
 import Card from "../HomePage/DiscoverMorePart/Card";
 import { MdFilterList } from "react-icons/md";
-import Pagination from "../../components/ui/Pagination";
+import Pagination from "../../components/common/Pagination";
 const Marketplace = () => {
   const [page, setPage] = useState(0);
   return (

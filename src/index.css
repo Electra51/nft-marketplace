@@ -16,6 +16,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  color: black;
 }
 
 @font-face {
@@ -51,7 +52,8 @@ h3 {
 p,
 a,
 option,
-select {
+select,
+span {
   font-family: "DM Sans", sans-serif;
 }
 
@@ -78,4 +80,88 @@ textarea:focus {
 
 .active:hover::before {
   width: 0%;
+}
+
+.swiper {
+  width: 400px;
+  height: 441px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 400px;
+  z-index: 8;
+  transform: translate3d(calc(-386px + 8.25%), -6px, -138px) rotateZ(2deg)
+    scale(1);
+  transition-duration: 0ms;
+}
+
+.swiper-slide:nth-child(3n) {
+  transform: translate3d(calc(-792px + 13%), 0px, -200px) rotateZ(3deg) scale(1);
+}
+
+.rounded-text {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 12px;
+  text-transform: uppercase;
+  transform: rotate(-103deg);
+  color: black;
+  background-color: #ffe0d4;
+  font-weight: bold;
+  z-index: -1;
+  font-family: "DM Sans", sans-serif;
+}
+.coloring {
+  letter-spacing: 5px;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.rotating {
+  animation: rotating 12s linear infinite;
+}
+@keyframes coloring {
+  0% {
+    fill: #070707;
+  }
+  35% {
+    fill: #070707;
+  }
+  75% {
+    fill: #070707;
+  }
+  100% {
+    fill: #070707;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .swiper {
+    width: 300px;
+    height: 431px;
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  .swiper {
+    width: 290px;
+    height: 441px;
+  }
 }
