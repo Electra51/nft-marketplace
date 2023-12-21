@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Integral CF Bold";
+  src: url(../public/fontspring-demo-integralcf-bold.woff);
+}
+
+@font-face {
+  font-family: "Integral CF Medium";
+  src: url(../public/fontspring-demo-integralcf-medium.woff);
+}
+
+@font-face {
+  font-family: "integral_cfregular";
+  src: url(../public/fontsfree-net-integral-cf-regular.woff);
+}
+
+@font-face {
+  font-family: "averta_demo_pe_cutted_demoRg";
+  src: url(../public/fontsfree-net-avertademopecutteddemo-regular.woff);
+}
+
+h1 {
+  font-family: "Integral CF Bold";
+}
+
+h2 {
+  font-family: "Integral CF Medium", sans-serif;
+}
+
+h3 {
+  font-family: "averta_demo_pe_cutted_demoRg";
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+}
