@@ -4,7 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* font-family: 'DM Sans', sans-serif; */
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,15 +29,13 @@
 }
 
 @font-face {
-  font-family: "integral_cfregular";
-  src: url(../public/fontsfree-net-integral-cf-regular.woff);
-}
-
-@font-face {
   font-family: "averta_demo_pe_cutted_demoRg";
   src: url(../public/fontsfree-net-avertademopecutteddemo-regular.woff);
 }
-
+@font-face {
+  font-family: "integral_cfregular";
+  src: url(../public/fontsfree-net-integral-cf-regular.woff);
+}
 h1 {
   font-family: "Integral CF Bold";
 }

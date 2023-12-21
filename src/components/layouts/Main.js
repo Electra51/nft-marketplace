@@ -6,7 +6,8 @@ import Footer from "./Footer";
 const Main = () => {
   return (
     <div>
-      <Navbar /> <Outlet />
+      <Navbar />
+      <Outlet />
       <Footer />
     </div>
   );
