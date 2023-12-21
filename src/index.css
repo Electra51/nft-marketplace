@@ -43,6 +43,30 @@ h3 {
   font-family: "averta_demo_pe_cutted_demoRg";
 }
 
-p {
+p,
+a {
   font-family: "DM Sans", sans-serif;
+}
+
+input:focus {
+  outline: none !important;
+}
+.active {
+  position: relative;
+  color: #3d00b7;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 60%;
+  height: 2px;
+  background-color: #3d00b7;
+  transition: width 0.3s ease;
+}
+
+.active:hover::before {
+  width: 0%;
 }

@@ -1,7 +1,15 @@
 import "./App.css";
-
+import { RouterProvider } from "react-router-dom";
+import router from "./Routes/Routes";
+import { Toaster } from "react-hot-toast";
 function App() {
-  return <h1 class="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      {" "}
+      <Toaster />
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
