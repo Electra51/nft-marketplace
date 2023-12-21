@@ -3,10 +3,10 @@ import img1 from "../../assets/discoverMoreImage/4.jpg"
 const About = () => {
     return (
         <div className='max-w-[1200px] mx-auto'>
-            <h1 className='font-bold text-xl text-black mt-[30px]'>
-                Direct Teams.
-            </h1>
-            <h1 className='font-bold text-xl text-black'>For Your Dadicated Dreams</h1>
+            <h2 className='font-medium text-[40px] text-black mt-[30px]'>
+                Direct Teams
+            </h2>
+            <h2 className='font-medium text-[40px] text-black'>For Your Dadicated Dreams</h2>
             <div className='relative'>
                 <div className='w-[1200px] h-[500px] rounded-xl my-[30px]'><img src={img1} alt="" className='w-full h-full object-cover rounded-xl' /></div>
                 <div className='absolute -bottom-[120px] left-8 w-[600px] h-[280px] border border-[#F4F4F4] rounded-2xl px-6 py-5 bg-gray-300'>
