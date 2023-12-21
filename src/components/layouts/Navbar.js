@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MdOutlineClose, MdOutlineMenu } from "react-icons/md";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -71,7 +71,7 @@ const Navbar = () => {
       <div className="navbar max-w-[1200px] mx-auto mt-0 lg:mt-[29px] bg-base-100 flex justify-normal gap-[70px]">
         <div className="flex justify-normal items-center">
           <div className="flex justify-normal items-end divide-x divide-[#F4F4F4]">
-            <h1 className="text-[24px] text-themeColor mr-[31px]">NFTERS</h1>
+            <Link to="/"><h1 className="text-[24px] text-themeColor mr-[31px]">NFTERS</h1></Link>
             <Navigation isMobile={false} />
           </div>
           <MdOutlineMenu
