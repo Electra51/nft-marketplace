@@ -17,7 +17,6 @@ import man4 from "../../assets/discoverMoreImage/man4.png";
 import heroImage3 from "../../assets/3.png";
 import heroImage2 from "../../assets/2.png";
 import heroImage1 from "../../assets/1.png";
-import manPic from "../../assets/manPic.png";
 import badgeImg from "../../assets/ThirtPartImage/Vector (1).png";
 import thirdPartRightImg1 from "../../assets/ThirtPartImage/1.png";
 import thirdPartRightImg2 from "../../assets/ThirtPartImage/2.png";
@@ -28,6 +27,17 @@ import productImage1 from "../../assets/product1.png";
 import productImage2 from "../../assets/product2.png";
 import productImage3 from "../../assets/product3.png";
 import productImage4 from "../../assets/product4.png";
+
+import featureImage1 from "../../assets/featureImage/1.png";
+import featureImage2 from "../../assets/featureImage/6.png";
+import featureImage6 from "../../assets/featureImage/3..png";
+import featureImage9 from "../../assets/featureImage/9.png";
+import featureImage5 from "../../assets/featureImage/2.png";
+import featureImage3 from "../../assets/featureImage/5.png";
+import featureImage4 from "../../assets/featureImage/4.png";
+import featureImage7 from "../../assets/featureImage/7.png";
+import featureImage8 from "../../assets/featureImage/8.png";
+import manPic from "../../assets/manPic.png";
 
 export const menus = [
   { to: "/market_place", label: "Marketplace" },
@@ -148,6 +158,76 @@ export const productImage = [
     img: productImage4,
   },
 ];
+
+export const featuredCollection = [
+  {
+    id: "1",
+    featureImage: featureImage1,
+    smallImage: [
+      {
+        id: "1",
+        img1: featureImage2,
+      },
+      {
+        id: "2",
+        img1: featureImage3,
+      },
+      {
+        id: "3",
+        img1: featureImage4,
+      },
+    ],
+    title: "Amazing Collection",
+    created_by: "by Arkhan",
+    item: "54",
+    manPic: manPic,
+  },
+  {
+    id: "2",
+    featureImage: featureImage5,
+    smallImage: [
+      {
+        id: "1",
+        img1: featureImage3,
+      },
+      {
+        id: "2",
+        img1: featureImage2,
+      },
+      {
+        id: "3",
+        img1: featureImage7,
+      },
+    ],
+    title: "Latest Collection",
+    created_by: "by Simran",
+    item: "35",
+    manPic: man2,
+  },
+  {
+    id: "3",
+    featureImage: featureImage8,
+    smallImage: [
+      {
+        id: "1",
+        img1: featureImage9,
+      },
+      {
+        id: "2",
+        img1: featureImage6,
+      },
+      {
+        id: "3",
+        img1: featureImage2,
+      },
+    ],
+    title: "Awesome Collection",
+    created_by: "by Devid Jhon",
+    item: "43",
+    manPic: man3,
+  },
+];
+
 export const data = [
   {
     id: "1",

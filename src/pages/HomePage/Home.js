@@ -12,7 +12,7 @@ const Home = () => {
       <HeroPart />
       <SecondPartofHome />
       <ThirdPart />
-      {/* <FeaturedCollectionPart /> */}
+      <FeaturedCollectionPart />
       {/* <CreateSellPart /> */}
       {/* <DiscoverMorePart /> */}
     </div>

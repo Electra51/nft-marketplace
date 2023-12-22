@@ -15,10 +15,6 @@ const LeftPartofThirdPart = () => {
   const filteredProductImages = productImage?.slice(1);
   return (
     <div className="flex flex-col-reverse md:flex-row-reverse lg:flex-row-reverse justify-center lg:justify-start items-center md:gap-[30px] gap-0 lg:gap-[53px]">
-      {/* flex flex-col-reverse md:flex-row-reverse lg:flex-row-reverse
-      justify-center lg:justify-start md:gap-[30px] lg:gap-[53px] items-center
-      md:items-start lg:items-start md:mt-0 lg:mt-0 border border-red-500 */}
-
       <div className="flex flex-row md:flex-col lg:flex-col gap-4 md:gap-3 lg:gap-[41px] mt-6 md:mt-0">
         {filteredProductImages.map((data, i) => (
           <div
