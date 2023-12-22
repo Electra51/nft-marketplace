@@ -26,9 +26,6 @@ https://6585705c1eb607bd30c8b7f8--tranquil-licorice-be2691.netlify.app/
 - **Search and Filter**: Users can easily discover NFTs through search and filtering options.
 
 
-
-
-
 ## Technologies Used
 
  **Frontend:**
@@ -41,6 +38,12 @@ https://6585705c1eb607bd30c8b7f8--tranquil-licorice-be2691.netlify.app/
   **Backend:**
  - This is a frontend focus project. No backend technology is used here. Use fake JSON data.
 
+## Color Palette
+
+| Color         | Hex                                                            |
+| ------------- | -------------------------------------------------------------- |
+| Body Color    | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
+| Theme Color   | ![#3d00b7](https://via.placeholder.com/10/3d00b7?text=+) #3d00b7 |
 
 
 ## Screenshots
