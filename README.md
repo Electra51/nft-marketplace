@@ -1,7 +1,13 @@
 
 # NFTERS -NFT Marketplace
 
-NFT Marketplace-based web application with fully responsible mobile and tablet views
+NFT Marketplace-based web application with fully responsible mobile and tablet views following this criteria:
+- Readability of your code
+- Level of imitation from the UI
+- Layout Responsiveness
+- Micro-interactions (ex. hover effect)
+- Optimization of the Framework Used (React.js/Next.js)
+- Usage and understanding of modern JavaScript concepts
 
 
 ## Project Logo
