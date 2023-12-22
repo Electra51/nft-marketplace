@@ -7,7 +7,6 @@ import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-
   const items = (
     <>
       <div className="relative">

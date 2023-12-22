@@ -1,8 +1,10 @@
 import React from "react";
 import img1 from "../../assets/discoverMoreImage/4.jpg";
+import HelmetComponent from "../../components/common/HelmetComponent";
 const About = () => {
   return (
     <div className="lg:max-w-[1200px] mx-auto">
+      <HelmetComponent title={"NFTERS | About"} />
       <h2 className="font-medium text-[18px] md:text-[25px] ml-5 lg:text-[40px] mt-5 lg:mt-[30px]">
         Direct Teams
       </h2>

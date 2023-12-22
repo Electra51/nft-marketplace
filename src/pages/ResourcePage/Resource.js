@@ -4,10 +4,12 @@ import { FiPhoneCall } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import CommonBanner from "../../components/common/CommonBanner";
+import HelmetComponent from "../../components/common/HelmetComponent";
 
 const Resource = () => {
   return (
     <div>
+      <HelmetComponent title={"NFTERS | Resource"} />
       {/* banner */}
       <CommonBanner
         title={" Resource"}

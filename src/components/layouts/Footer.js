@@ -70,7 +70,7 @@ const Footer = () => {
                 placeholder="Enter your email address.."
                 className="input input-bordered input-[#F1F1F1] w-full max-w-[364px] mt-6 rounded-full h-[60px]"
               />
-              <p className="absolute top-8 right-2 h-[46px] w-[149px] flex justify-center items-center bg-[#2639ED] rounded-full text-white text-[12px] font-normal">
+              <p className="absolute top-8 right-2 h-[46px] w-[149px] flex justify-center items-center bg-[#2639ED] rounded-full text-white text-[12px] font-normal cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 ">
                 Subscibe Now
               </p>
             </div>

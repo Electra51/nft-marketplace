@@ -5,10 +5,12 @@ import FeaturedCollectionPart from "./FeaturedCollectionPart/FeaturedCollectionP
 import CreateSellPart from "./CreateSellPart/CreateSellPart";
 import DiscoverMorePart from "./DiscoverMorePart/DiscoverMorePart";
 import SecondPartofHome from "./SecondPart/SecondPartofHome";
+import HelmetComponent from "../../components/common/HelmetComponent";
 
 const Home = () => {
   return (
     <div>
+      <HelmetComponent title={"NFTERS | Home"} />
       <HeroPart />
       <SecondPartofHome />
       <ThirdPart />

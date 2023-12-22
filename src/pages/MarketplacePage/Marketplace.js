@@ -5,11 +5,13 @@ import Card from "../HomePage/DiscoverMorePart/Card";
 import { MdFilterList } from "react-icons/md";
 import Pagination from "../../components/common/Pagination";
 import CommonBanner from "../../components/common/CommonBanner";
+import HelmetComponent from "../../components/common/HelmetComponent";
 
 const Marketplace = () => {
   const [page, setPage] = useState(0);
   return (
     <div>
+      <HelmetComponent title={"NFTERS | Marketplace"} />
       <CommonBanner
         title={" NFT MarketPlace"}
         description={

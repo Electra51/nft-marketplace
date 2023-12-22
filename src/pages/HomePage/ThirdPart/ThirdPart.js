@@ -39,7 +39,7 @@ const ThirdPart = () => {
                     </div>
                     <button className="flex justify-center md:justify-start lg:justify-start lg:items-start items-center">
                       {" "}
-                      <h3 className="text-[14px] bg-[#3D00B7] text-white flex justify-center items-center h-[30px] lg:h-[45px] w-[89px] lg:w-[113px] rounded-full mt-2 lg:mt-4 whitespace-nowrap">
+                      <h3 className="text-[14px] bg-[#3D00B7] text-white flex justify-center items-center h-[30px] lg:h-[45px] w-[89px] lg:w-[113px] rounded-full mt-2 lg:mt-4 whitespace-nowrap cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white">
                         Place a bid
                       </h3>
                     </button>

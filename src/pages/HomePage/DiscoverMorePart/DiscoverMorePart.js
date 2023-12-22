@@ -17,7 +17,7 @@ const DiscoverMorePart = () => {
     const filtered = data?.filter((service) => {
       let matchesRating;
       if (ratingFilter === "all") {
-        matchesRating = true; // Show all services if "All" is selected
+        matchesRating = true;
       } else if (ratingFilter === "4") {
         matchesRating = service?.rating <= 4; // Less than or equal to 4 for "Less Than 4"
       } else if (ratingFilter === "3") {
@@ -45,6 +45,24 @@ const DiscoverMorePart = () => {
   const Music = filteredServices?.filter((item) => item.type === "Music");
   const Crypto = filteredServices?.filter((item) => item.type === "Crypto");
 
+  const renderFilteredServices = (filteredItems) => {
+    if (filteredItems && filteredItems.length > 0) {
+      return (
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 my-7 justify-items-center">
+          {filteredItems.map((item, index) => (
+            <Card item={item} key={index} />
+          ))}
+        </div>
+      );
+    } else {
+      return (
+        <p className="text-red-500 text-xl flex flex-col justify-center items-center my-20 gap-4">
+          No products available for the selected rating or search.
+        </p>
+      );
+    }
+  };
+
   return (
     <div className="md:mt-[167px] lg:mt-[82px] bg-[#D9E0EC] bg-opacity-20">
       <div className="max-w-[1200px] mx-auto">
@@ -57,8 +75,8 @@ const DiscoverMorePart = () => {
               <p
                 className={
                   toggleState == 1
-                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
-                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
+                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500"
+                    : " bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
                 onClick={() => toggleTab(1)}>
                 All Categories
@@ -66,8 +84,8 @@ const DiscoverMorePart = () => {
               <p
                 className={
                   toggleState == 2
-                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
-                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
+                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500"
+                    : "bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
                 onClick={() => toggleTab(2)}>
                 Art
@@ -75,8 +93,8 @@ const DiscoverMorePart = () => {
               <p
                 className={
                   toggleState == 3
-                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
-                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
+                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
+                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
                 onClick={() => toggleTab(3)}>
                 Celebrities
@@ -84,8 +102,8 @@ const DiscoverMorePart = () => {
               <p
                 className={
                   toggleState == 4
-                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
-                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
+                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
+                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
                 onClick={() => toggleTab(4)}>
                 Gaming
@@ -93,8 +111,8 @@ const DiscoverMorePart = () => {
               <p
                 className={
                   toggleState == 5
-                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
-                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
+                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
+                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
                 onClick={() => toggleTab(5)}>
                 Sport
@@ -102,8 +120,8 @@ const DiscoverMorePart = () => {
               <p
                 className={
                   toggleState == 6
-                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
-                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
+                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
+                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
                 onClick={() => toggleTab(6)}>
                 Music
@@ -111,8 +129,8 @@ const DiscoverMorePart = () => {
               <p
                 className={
                   toggleState == 7
-                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
-                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer"
+                    ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
+                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
                 onClick={() => toggleTab(7)}>
                 Crypto
@@ -138,135 +156,14 @@ const DiscoverMorePart = () => {
         </div>
 
         <div className="md:mt-[90px] lg:mt-0">
-          <div className={toggleState == 1 ? "text-gray-900" : "hidden"}>
-            {" "}
-            {filteredServices && filteredServices.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 my-7 justify-items-center">
-                {filteredServices?.map((e, i) => (
-                  <Card item={e} key={i} />
-                ))}
-              </div>
-            ) : (
-              <p className="text-red-500 text-xl flex flex-col justify-center items-center my-20  gap-4">
-                {/* <RxShadowNone /> */}
-                No products available for the selected rating or search.
-              </p>
-            )}
-          </div>
-          <div className={toggleState == 2 ? "text-gray-900" : "hidden"}>
-            {filteredServices && filteredServices.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 my-7 justify-items-center">
-                {Art?.map((e, i) => (
-                  <Card item={e} key={i} />
-                ))}
-              </div>
-            ) : (
-              <p className="text-red-500 text-xl flex flex-col justify-center items-center my-20  gap-4">
-                {/* <RxShadowNone /> */}
-                No products available for the selected rating or search.
-              </p>
-            )}
-          </div>
-          <div
-            className={
-              toggleState == 3
-                ? "bg-blue-gray-500 text-gray-900 px-2 py-1 rounded"
-                : "hidden"
-            }>
-            {" "}
-            {filteredServices && filteredServices.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 my-7 justify-items-center">
-                {Celebrities?.map((e, i) => (
-                  <Card item={e} key={i} />
-                ))}
-              </div>
-            ) : (
-              <p className="text-red-500 text-xl flex flex-col justify-center items-center my-20  gap-4">
-                {/* <RxShadowNone /> */}
-                No products available for the selected rating or search.
-              </p>
-            )}
-          </div>
-          <div
-            className={
-              toggleState == 4
-                ? "bg-blue-gray-500 text-gray-900 px-2 py-1 rounded"
-                : "hidden"
-            }>
-            {" "}
-            {filteredServices && filteredServices.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 my-7 justify-items-center">
-                {Gaming?.map((e, i) => (
-                  <Card item={e} key={i} />
-                ))}
-              </div>
-            ) : (
-              <p className="text-red-500 text-xl flex flex-col justify-center items-center my-20  gap-4">
-                {/* <RxShadowNone /> */}
-                No products available for the selected rating or search.
-              </p>
-            )}
-          </div>
-          <div
-            className={
-              toggleState == 5
-                ? "bg-blue-gray-500 text-gray-900 px-2 py-1 rounded"
-                : "hidden"
-            }>
-            {" "}
-            {filteredServices && filteredServices.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 my-7 justify-items-center">
-                {Sport?.map((e, i) => (
-                  <Card item={e} key={i} />
-                ))}
-              </div>
-            ) : (
-              <p className="text-red-500 text-xl flex flex-col justify-center items-center my-20  gap-4">
-                {/* <RxShadowNone /> */}
-                No products available for the selected rating or search.
-              </p>
-            )}
-          </div>
-          <div
-            className={
-              toggleState == 6
-                ? "bg-blue-gray-500 text-gray-900 px-2 py-1 rounded"
-                : "hidden"
-            }>
-            {" "}
-            {filteredServices && filteredServices.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 my-7 justify-items-center">
-                {Music?.map((e, i) => (
-                  <Card item={e} key={i} />
-                ))}
-              </div>
-            ) : (
-              <p className="text-red-500 text-xl flex flex-col justify-center items-center my-20  gap-4">
-                {/* <RxShadowNone /> */}
-                No products available for the selected rating or search.
-              </p>
-            )}
-          </div>
-          <div
-            className={
-              toggleState == 7
-                ? "bg-blue-gray-500 text-gray-900 px-2 py-1 rounded"
-                : "hidden"
-            }>
-            {" "}
-            {filteredServices && filteredServices.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 my-7 justify-items-center">
-                {Crypto?.map((e, i) => (
-                  <Card item={e} key={i} />
-                ))}
-              </div>
-            ) : (
-              <p className="text-red-500 text-xl flex flex-col justify-center items-center my-20  gap-4">
-                {/* <RxShadowNone /> */}
-                No products available for the selected rating or search.
-              </p>
-            )}
-          </div>
+          {toggleState === 1 && renderFilteredServices(filteredServices)}
+          {toggleState === 2 && renderFilteredServices(Art)}
+          {toggleState === 3 && renderFilteredServices(Celebrities)}
+          {toggleState === 4 && renderFilteredServices(Gaming)}
+          {toggleState === 5 && renderFilteredServices(Sport)}
+          {toggleState === 6 && renderFilteredServices(Music)}
+          {toggleState === 7 && renderFilteredServices(Crypto)}
+
           <Link
             to="/market_place"
             className="py-[30px] flex justify-center items-center">
