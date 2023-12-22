@@ -1,32 +1,39 @@
-import img1 from "../../assets/discoverMoreImage/1.png"
-import img2 from "../../assets/discoverMoreImage/2.png"
-import img3 from "../../assets/discoverMoreImage/3.png"
-import img4 from "../../assets/discoverMoreImage/1.jpeg"
-import img5 from "../../assets/discoverMoreImage/10.jpeg"
-import img6 from "../../assets/discoverMoreImage/11.jpeg"
-import img7 from "../../assets/discoverMoreImage/12.jpeg"
-import img8 from "../../assets/discoverMoreImage/13.jpeg"
-import img9 from "../../assets/discoverMoreImage/14.jpeg"
-import img10 from "../../assets/discoverMoreImage/15.jpeg"
-import img11 from "../../assets/discoverMoreImage/2.jpeg"
-import img12 from "../../assets/discoverMoreImage/3.jpeg"
-import man1 from "../../assets/discoverMoreImage/man1.png"
-import man2 from "../../assets/discoverMoreImage/man2.png"
-import man3 from "../../assets/discoverMoreImage/man3.png"
-import man4 from "../../assets/discoverMoreImage/man4.png"
-
+import img1 from "../../assets/discoverMoreImage/1.png";
+import img2 from "../../assets/discoverMoreImage/2.png";
+import img3 from "../../assets/discoverMoreImage/3.png";
+import img4 from "../../assets/discoverMoreImage/1.jpeg";
+import img5 from "../../assets/discoverMoreImage/10.jpeg";
+import img6 from "../../assets/discoverMoreImage/11.jpeg";
+import img7 from "../../assets/discoverMoreImage/12.jpeg";
+import img8 from "../../assets/discoverMoreImage/13.jpeg";
+import img9 from "../../assets/discoverMoreImage/14.jpeg";
+import img10 from "../../assets/discoverMoreImage/15.jpeg";
+import img11 from "../../assets/discoverMoreImage/2.jpeg";
+import img12 from "../../assets/discoverMoreImage/3.jpeg";
+import man1 from "../../assets/discoverMoreImage/man1.png";
+import man2 from "../../assets/discoverMoreImage/man2.png";
+import man3 from "../../assets/discoverMoreImage/man3.png";
+import man4 from "../../assets/discoverMoreImage/man4.png";
 import heroImage3 from "../../assets/3.png";
-import heroImage2 from "../../assets/2.png"
+import heroImage2 from "../../assets/2.png";
 import heroImage1 from "../../assets/1.png";
-import manPic from "../../assets/manPic.png"
-
+import manPic from "../../assets/manPic.png";
+import badgeImg from "../../assets/ThirtPartImage/Vector (1).png";
+import thirdPartRightImg1 from "../../assets/ThirtPartImage/1.png";
+import thirdPartRightImg2 from "../../assets/ThirtPartImage/2.png";
+import thirdPartRightImg3 from "../../assets/ThirtPartImage/3.png";
+import thirdPartRightImg4 from "../../assets/ThirtPartImage/4.png";
+import thirdPartRightImg5 from "../../assets/ThirtPartImage/5.png";
+import productImage1 from "../../assets/product1.png";
+import productImage2 from "../../assets/product2.png";
+import productImage3 from "../../assets/product3.png";
+import productImage4 from "../../assets/product4.png";
 
 export const menus = [
   { to: "/market_place", label: "Marketplace" },
   { to: "/resource", label: "Resource" },
   { to: "/about", label: "About" },
 ];
-
 
 export const heroData = [
   {
@@ -36,8 +43,7 @@ export const heroData = [
     img: heroImage1,
     manImg: manPic,
     eth: "0.25 ETH",
-    time: "12h  43m  42s"
-
+    time: "12h  43m  42s",
   },
   {
     id: "2",
@@ -46,8 +52,7 @@ export const heroData = [
     img: heroImage2,
     manImg: man2,
     eth: "1.20 ETH",
-    time: "15h  30m  20s"
-
+    time: "15h  30m  20s",
   },
   {
     id: "3",
@@ -56,11 +61,93 @@ export const heroData = [
     img: heroImage3,
     manImg: man3,
     eth: "1.75 ETH",
-    time: "17h  43m  32s"
+    time: "17h  43m  32s",
+  },
+];
 
-  }
-]
+export const thirdPartMiddleData = [
+  {
+    id: "1",
+    name: "Te ASH Abstr",
+    manImg: man1,
+    eth: "0.25 ETH",
+    num: 1,
+  },
+  {
+    id: "3",
+    name: "Latest HG Abstr",
+    manImg: man2,
+    eth: "0.45 ETH",
+    num: 4,
+  },
+  {
+    id: "3",
+    name: "The Futr klo",
+    manImg: man3,
+    eth: "1.25 ETH",
+    num: 2,
+  },
+];
+export const thirdPartRightData = [
+  {
+    id: "1",
+    name: "CryptoFunks",
+    manImg: thirdPartRightImg1,
+    imgIcon: badgeImg,
+    percents: "+26.52%",
+    num: "19, 769.39",
+  },
+  {
+    id: "2",
+    name: "Cryptix",
+    manImg: thirdPartRightImg2,
+    percents: "+10.52%",
+    num: "2,769.39",
+    color: "red",
+  },
+  {
+    id: "3",
+    name: "Frensware",
+    manImg: thirdPartRightImg3,
+    percents: "+2.52%",
+    num: "9,232.39",
+  },
+  {
+    id: "4",
+    name: "PunkArt",
+    manImg: thirdPartRightImg4,
+    imgIcon: badgeImg,
+    percents: "+1.52%",
+    num: "3,769.39",
+  },
+  {
+    id: "5",
+    name: "Art Crypto",
+    manImg: thirdPartRightImg5,
+    percents: "+2.52%",
+    num: "10,769.39",
+    color: "red",
+  },
+];
 
+export const productImage = [
+  {
+    id: "1",
+    img: productImage1,
+  },
+  {
+    id: "2",
+    img: productImage2,
+  },
+  {
+    id: "3",
+    img: productImage3,
+  },
+  {
+    id: "4",
+    img: productImage4,
+  },
+];
 export const data = [
   {
     id: "1",
@@ -73,21 +160,21 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
-
   },
   {
     id: "2",
@@ -100,19 +187,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -126,19 +214,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -152,19 +241,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -178,19 +268,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -204,19 +295,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -230,19 +322,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -256,19 +349,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -282,19 +376,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -308,19 +403,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -334,19 +430,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -360,19 +457,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -386,21 +484,21 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
-
   },
   {
     id: "14",
@@ -413,19 +511,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -439,19 +538,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
   {
@@ -465,21 +565,20 @@ export const data = [
     manimg: [
       {
         id: "1",
-        img: man1
+        img: man1,
       },
       {
         id: "2",
-        img: man2
+        img: man2,
       },
       {
         id: "3",
-        img: man3
-      }, {
+        img: man3,
+      },
+      {
         id: "4",
-        img: man4
-      }
+        img: man4,
+      },
     ],
   },
-
-
-]
+];

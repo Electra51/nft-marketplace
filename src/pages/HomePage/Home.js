@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <HeroPart />
       <SecondPartofHome />
-      {/* <ThirdPart /> */}
+      <ThirdPart />
       {/* <FeaturedCollectionPart /> */}
       {/* <CreateSellPart /> */}
       {/* <DiscoverMorePart /> */}
