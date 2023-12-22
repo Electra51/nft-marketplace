@@ -18,10 +18,10 @@ const Navbar = () => {
         />
         <FaSearch className="text-[#c5c5c5] text-xl absolute right-[-95px] md:right-6 lg:right-4 top-3.5" />
       </div>
-      <p className="tracking-[0.1] h-[50px] font-bold text-[14px] text-white bg-themeColor border-themeColor border-[2px] rounded-[60px] flex justify-center items-center px-[110px] lg:px-[40px] lg:py-[18px]">
+      <p className="tracking-[0.1] h-[50px] font-bold text-[14px] text-white bg-themeColor rounded-[60px] flex justify-center items-center px-[110px] lg:px-[40px] lg:py-[18px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white">
         Upload
       </p>
-      <p className="font-bold text-[14px] text-themeColor tracking-[0.1] border-themeColor border-[2px] rounded-[60px] px-[110px] lg:px-[20px] whitespace-nowrap py-[18px] h-[50px] flex justify-center items-center">
+      <p className="font-bold text-[14px] text-themeColor tracking-[0.1] border-themeColor border-[2px] rounded-[60px] px-[110px] lg:px-[20px] whitespace-nowrap py-[18px] h-[50px] flex justify-center items-center cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white">
         Connect Wallet
       </p>
     </>

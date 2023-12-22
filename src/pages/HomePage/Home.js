@@ -13,8 +13,8 @@ const Home = () => {
       <SecondPartofHome />
       <ThirdPart />
       <FeaturedCollectionPart />
-      {/* <CreateSellPart /> */}
-      {/* <DiscoverMorePart /> */}
+      <CreateSellPart />
+      <DiscoverMorePart />
     </div>
   );
 };

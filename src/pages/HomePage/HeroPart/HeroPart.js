@@ -13,11 +13,11 @@ const HeroPart = () => {
           Digital marketplace for crypto collectibles and non-fungible tokens
           (NFTs). Buy, Sell, and discover exclusive digital assets.
         </p>
-        <div className="flex justify-center items-center lg:justify-start">
+        <button className="flex justify-center items-center lg:justify-start">
           <h3 className="bg-[#3D00B7] font-normal text-xl px-[40px] py-[20px] h-[65px] w-[209px] flex justify-center items-center text-white rounded-[60px] mt-[41px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500">
             Explore Now
           </h3>
-        </div>
+        </button>
         <div className=" flex lg:justify-start items-center gap-[23px] mt-[30px] justify-center">
           {" "}
           <div>

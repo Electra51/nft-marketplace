@@ -3,7 +3,7 @@ import { featuredCollection } from "../../../components/common/data";
 const FeaturedCollectionPart = () => {
   return (
     <div className="mt-[600px] md:mt-[483px] lg:mt-[151px] bg-[#D9E0EC] bg-opacity-20">
-      <div className="max-w-[1200px] mx-auto h-[619px]">
+      <div className="max-w-[1200px] mx-auto h-[1389px] lg:h-[619px]">
         <h1 className="text-[20px] md:text-[28px] lg:text-[28px] font-bold text-center lg:text-start pt-[64px] pb-[55px]">
           Collection Featured NFTs
         </h1>
