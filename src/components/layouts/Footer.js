@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="border-t border-[#ECECEC]">
       <div className="flex flex-col lg:flex-row justify-start items-center lg:items-start gap-[100px] max-w-[1200px] mx-auto pt-[79px] ">
         <div className="flex flex-col justify-center items-center lg:block">
-          <h1 className="text-[24px] text-black">NFTERS</h1>
+          <h1 className="text-[24px]">NFTERS</h1>
           <h3 className="text-[#565656] text-[14px] mt-[27px] w-[333px] text-center lg:text-start">
             The world’s first and largest digital marketplace for crypto
             collectibles and non-fungible tokens (NFTs). Buy, sell, and discover
@@ -29,9 +29,7 @@ const Footer = () => {
 
         <div className="grid grid-cols-2 -mt-3 lg:mt-0 lg:flex gap-[50px] lg:gap-[80px]">
           <div className=" text-center lg:text-start">
-            <p className="font-bold text-[18px] text-black mt-1">
-              Market Place
-            </p>
+            <p className="font-bold text-[18px] mt-1">Market Place</p>
             <div className="leading-[30px] mt-[27px]">
               <p className="font-medium text-[14px] text-[#3D3D3D]">All NFTs</p>
               <p className="font-medium text-[14px] text-[#3D3D3D]">New</p>
@@ -45,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-center lg:text-start">
-            <p className="font-bold text-[18px] text-black mt-1">My Account</p>
+            <p className="font-bold text-[18px] mt-1">My Account</p>
             <div className="leading-[30px] mt-[27px]">
               <p className="font-medium text-[14px] text-[#3D3D3D]">Profile</p>
               <p className="font-medium text-[14px] text-[#3D3D3D]">Favorite</p>
@@ -57,7 +55,7 @@ const Footer = () => {
           </div>
           <div className="w-[364px] sm:col-span-2 sm:mx-auto">
             {" "}
-            <p className="font-bold text-[18px] text-black mt-1 text-center lg:text-start">
+            <p className="font-bold text-[18px] mt-1 text-center lg:text-start">
               Stay in the loop
             </p>
             <p className="font-normal text-[14px] mt-[27px] text-[#3D3D3D] w-[364px] tracking-[0.3] lg:text-start text-center">

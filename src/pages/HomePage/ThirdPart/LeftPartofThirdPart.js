@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import manPic from "../../../assets/manPic.png";
 import { FaEthereum } from "react-icons/fa";
 import { productImage } from "../../../components/common/data";
+
 const LeftPartofThirdPart = () => {
   const [wordData, setWordData] = useState(productImage[0]);
   const [val, setVal] = useState(0);
@@ -19,7 +20,8 @@ const LeftPartofThirdPart = () => {
         {filteredProductImages.map((data, i) => (
           <div
             className="h-[80px] md:h-[110px] lg:h-[147px] w-[100px] md:w-[140px] lg:w-[147px]"
-            key={i}>
+            key={i}
+          >
             <img
               className={`${
                 wordData?.id === data?.id ? "clicked" : ""

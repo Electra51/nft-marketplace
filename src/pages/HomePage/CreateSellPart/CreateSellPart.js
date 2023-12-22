@@ -47,7 +47,7 @@ const CreateSellPart = () => {
         </div>
       </div>
       <div className="ml-0 lg:ml-[20px]">
-        <h1 className="font-bold text-[28px] text-center lg:text-start lg:text-[32px] text-black w-[320px] mt-[77px] lg:mt-[136px] mx-auto lg:mx-0">
+        <h1 className="font-bold text-[28px] text-center lg:text-start lg:text-[32px] w-[320px] mt-[77px] lg:mt-[136px] mx-auto lg:mx-0">
           Create and sell your NFTs
         </h1>
         <p className="text-[18px] font-normal text-[#636363] mt-[40px] text-center lg:text-start">

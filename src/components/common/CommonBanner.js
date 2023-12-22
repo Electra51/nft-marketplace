@@ -1,12 +1,14 @@
 import React from "react";
 import dotImage from "../../assets/Dot.png";
+
 const CommonBanner = ({ title, description, resourseBanner }) => {
   return (
     <div
       className="hero h-[260px] bg-fixed"
       style={{
         backgroundImage: `url(${resourseBanner})`,
-      }}>
+      }}
+    >
       <div className="hero-overlay bg-opacity-10"></div>
       <div className="absolute left-[2rem] lg:left-[353px] top-[163px] lg:top-48">
         <h2 className="font-medium text-[25px] lg:text-[40px] text-start">

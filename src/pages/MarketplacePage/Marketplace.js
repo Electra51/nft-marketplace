@@ -25,11 +25,10 @@ const Marketplace = () => {
         <div className="flex justify-center items-center gap-1 rounded-[100px] bg-[#DCDCDC] bg-opacity-20 text-[#371C87] w-[155px] h-[44px]">
           <MdFilterList className="text-xl" />
           <select
-            id="ratingFilter"
-            name="ratingFilter"
-            // value={ratingFilter}
-            // onChange={handleRatingFilterChange}
-            className="text-[14px] font-medium bg-[#DCDCDC] bg-opacity-20 ">
+            id="Filter"
+            name="Filter"
+            className="text-[14px] font-medium bg-[#DCDCDC] bg-opacity-20 "
+          >
             <option value="all">All Filters</option>
             <option value="4">Less Than 4</option>
             <option value="3">More Than 4</option>

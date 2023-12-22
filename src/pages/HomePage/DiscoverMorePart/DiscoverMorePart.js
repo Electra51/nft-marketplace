@@ -13,17 +13,18 @@ const DiscoverMorePart = () => {
   const [filteredServices, setFilteredServices] = useState(data);
   const [ratingFilter, setRatingFilter] = useState("all");
 
+  //filter functionality
   useEffect(() => {
     const filtered = data?.filter((service) => {
       let matchesRating;
       if (ratingFilter === "all") {
         matchesRating = true;
       } else if (ratingFilter === "4") {
-        matchesRating = service?.rating <= 4; // Less than or equal to 4 for "Less Than 4"
+        matchesRating = service?.num <= 4;
       } else if (ratingFilter === "3") {
-        matchesRating = service?.rating > 4; // Greater than 4 for "More Than 4"
+        matchesRating = service?.num > 4;
       } else if (ratingFilter === "2") {
-        matchesRating = service?.rating < 3; // Greater than 3 for "More Than 3"
+        matchesRating = service?.num < 3;
       }
 
       return matchesRating;
@@ -31,6 +32,7 @@ const DiscoverMorePart = () => {
     setFilteredServices(filtered);
   }, [data, ratingFilter]);
 
+  //filter handle function
   const handleRatingFilterChange = (e) => {
     const selectedRating = e.target.value;
     setRatingFilter(selectedRating);
@@ -66,7 +68,7 @@ const DiscoverMorePart = () => {
   return (
     <div className="md:mt-[167px] lg:mt-[82px] bg-[#D9E0EC] bg-opacity-20">
       <div className="max-w-[1200px] mx-auto">
-        <h1 className="text-[20px] text-center lg:text-start lg:text-[34px] font-bold pt-[64px] text-black">
+        <h1 className="text-[20px] text-center lg:text-start lg:text-[34px] font-bold pt-[64px]">
           Discover more NFTs
         </h1>
         <div className="mt-9 h-[44px]">
@@ -78,7 +80,8 @@ const DiscoverMorePart = () => {
                     ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500"
                     : " bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
-                onClick={() => toggleTab(1)}>
+                onClick={() => toggleTab(1)}
+              >
                 All Categories
               </p>
               <p
@@ -87,52 +90,58 @@ const DiscoverMorePart = () => {
                     ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500"
                     : "bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
-                onClick={() => toggleTab(2)}>
+                onClick={() => toggleTab(2)}
+              >
                 Art
               </p>
               <p
                 className={
                   toggleState == 3
                     ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
-                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
+                    : "bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
-                onClick={() => toggleTab(3)}>
+                onClick={() => toggleTab(3)}
+              >
                 Celebrities
               </p>
               <p
                 className={
                   toggleState == 4
                     ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
-                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
+                    : "bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
-                onClick={() => toggleTab(4)}>
+                onClick={() => toggleTab(4)}
+              >
                 Gaming
               </p>
               <p
                 className={
                   toggleState == 5
                     ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
-                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
+                    : "bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
-                onClick={() => toggleTab(5)}>
+                onClick={() => toggleTab(5)}
+              >
                 Sport
               </p>
               <p
                 className={
                   toggleState == 6
                     ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
-                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
+                    : "bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
-                onClick={() => toggleTab(6)}>
+                onClick={() => toggleTab(6)}
+              >
                 Music
               </p>
               <p
                 className={
                   toggleState == 7
                     ? "bg-[#3D00B7] text-white text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
-                    : "text-black bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
+                    : "bg-[#DCDCDC] bg-opacity-20 text-[14px] font-medium px-5 py-[10px] rounded-[100px] cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white"
                 }
-                onClick={() => toggleTab(7)}>
+                onClick={() => toggleTab(7)}
+              >
                 Crypto
               </p>
             </div>
@@ -144,7 +153,8 @@ const DiscoverMorePart = () => {
                   name="ratingFilter"
                   value={ratingFilter}
                   onChange={handleRatingFilterChange}
-                  className="text-[14px] font-medium bg-[#DCDCDC] bg-opacity-20 ">
+                  className="text-[14px] font-medium bg-[#DCDCDC] bg-opacity-20 "
+                >
                   <option value="all">All Filters</option>
                   <option value="4">Less Than 4</option>
                   <option value="3">More Than 4</option>
@@ -166,7 +176,8 @@ const DiscoverMorePart = () => {
 
           <Link
             to="/market_place"
-            className="py-[30px] flex justify-center items-center">
+            className="py-[30px] flex justify-center items-center"
+          >
             <button>
               <p className="h-[66px] w-[179px] rounded-[50px] text-[#3D00B7] border border-[#3D00B7] text-xl text-medium flex justify-center items-center cursor-pointer hover:shadow-md shadow-violet-900 hover:bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-500 hover:text-white">
                 More NFTs

@@ -22,7 +22,7 @@ const Card = ({ item }) => {
         </div>
       </div>
       <div className="mt-[21px] mx-[23px]">
-        <p className="font-bold text-[19px] text-black">{item?.title}</p>
+        <p className="font-bold text-[19px]">{item?.title}</p>
         <div className="flex justify-between items-center">
           <div className="flex justify-normal items-center gap-[5px] text-[#00AC4F]">
             <FaEthereum className="text-[15px]" />
